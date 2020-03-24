@@ -4,25 +4,111 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <title>Bootstrap LOYO 1</title>
-    
-    
+
+
+    <h1>LOYO Buttons and Popovers</h1>
+    <hr>
+    <h3 id="blue"> BUTTONS!</h3>
+
+    <button type="button" id="button-margin" >Default Button!</button>
+
+
+    <button type="button" id="button-margin" class="btn btn-primary" >Primary Button With Bootstrap</button>
+    <button type="button" id="button-margin" class="btn btn-outline-primary">Outlined Button</button>
+
+  <button type="button" id="button-margin-lg" class="btn btn-primary btn-lg">Large </button>
+  <hr>
+  <h4>lg is for a large button while sm is for a small button. Using none resorts to the default "medium" button basically.</h4>
+  <hr>
+
+  <button type="button" id="button-margin" class="btn btn-primary btn-sm">Small</button>
+
+
+
+<a href="https://sites.google.com/hstat.org/y1920sep11"> <button type="button" class="btn btn-primary btn-lg btn-block" >SEP11!</button> </a>
+
+
+<hr>
+
+<h4>This above always fills the screen horizontally!</h4>
+
+
+    <hr>
+    <h3 id="purple"> POPOVERS!</h3>
+    <hr>
+    <h4 id="small-text">This was really confusing at first because I didn't understand why popovers weren't working even after I read how to "enable" them. It just gave me code but not where to put it. I realized it was js so I made a seperate script at the bottom of my html and added the js script so they would work.</h4>
+    <hr>
+
+<button type="button" id="button-margin" class="btn btn-lg btn-danger" data-toggle="popover" title="You Clicked It!" data-content="Wow this works now">Defualt</button>
+
+<button type="button" id="button-margin" data-placement="bottom" class="btn btn-lg btn-danger" data-toggle="popover" title="You Clicked It!" data-content="Wow this works now">Bottom</button>
+
+<button type="button" id="button-margin" data-placement="top" class="btn btn-lg btn-danger" data-toggle="popover" title="You Clicked It!" data-content="Wow this works now">Top</button>
+
+<button type="button" id="button-margin" data-placement="left" class="btn btn-lg btn-danger" data-toggle="popover" title="You Clicked It!" data-content="Wow this works now">Left</button>
+  <hr>
+  <h2>The text below is so the popovers have space!</h2>
+  <hr>
+  <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+
+
+
+
+
+
+
     <style>
-      
+
+
+      #small-text {
+        font-size: 14px;
+      }
+
+      h1 {
+        color: red;
+        margin: 0px 5px 5px;
+      }
+      h3,h2,h4 {
+       margin: 10px 20px 10px;
+      }
+
+      #button-margin {
+        margin: 10px 20px 10px;
+      }
+      #button-margin-lg{
+        margin: 20px 30px 20px;
+      }
+      #blue {
+        color: blue;
+      }
+
+      #purple {
+        color: purple;
+      }
+
+
+
+
     </style>
   </head>
   <body>
-    
-    
-    
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
