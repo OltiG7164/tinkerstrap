@@ -1,1 +1,3 @@
 # tinkerstrap
+# BOOTSTRAP :
+# BUTTONS AND POPOVERS

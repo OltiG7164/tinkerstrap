@@ -4,25 +4,122 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <title>Bootstrap LOYO 2</title>
-    
-    
+
+    <h1 id="white">LOYO Jumbotron and Carousel</h1>
+    <hr>
+    <h3 id="blue"> JUMBOTRON!</h3>
+    <hr>
+
+<div class="jumbotron">
+  <h1 class="display-4">This is a Jumbotron!</h1>
+  <p class="lead">This can be useful for big headings on a new topic you're going to talk about.</p>
+  <hr class="my-4">
+  <p>Below there is even a button</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="popover" title="You Clicked It!" data-content="Interesting!">Learn more</a>
+</div>
+
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+    <button type="button" id="button-margin" class="btn btn-outline-primary" data-toggle="popover" title="You Clicked It!" data-content="I think this one looks better">Outlined Button</button>
+  </div>
+</div>
+
+<hr>
+<h4>Personally I think I am going to use the fluid one more and incorporate popovers and buttons as well!</h4>
+<hr>
+  <h3 id="purple"> CAROUSEL!</h3>
+<hr>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" id="blue"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" id="blue"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" id="blue"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="orange.jpg" width="200px" alt="orange" class="center">
+    </div>
+    <div class="carousel-item">
+      <img src="banana.jpg" width="200px" alt="banana" class="center">
+    </div>
+    <div class="carousel-item">
+      <img src="apple.jpg" width="200px" alt="apple" class="center">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" id="blue">
+    <span class="carousel-control-prev-icon" aria-hidden="true" id="blue"></span>
+    <span class="sr-only" id="blue">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
     <style>
-      
+
+      #blue {
+        color: blue;
+      }
+
+      #purple {
+        color: purple;
+      }
+  body {
+    background-color: black;
+  }
+
+h4 {
+  color: white;
+}
+
+#white {
+  color: white;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
     </style>
   </head>
   <body>
-    
-    
-    
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
